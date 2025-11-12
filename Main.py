@@ -1,6 +1,5 @@
 #print("Hello World" , end=" ")
 #print("Hi World")
-
 #print("Hi my name is Hamza and I'm" , 35 , "years old")
 
 #x = 45
@@ -13,10 +12,13 @@
 
 num1 = input("Enter first number: ")
 num2 = input("Enter second number: ")   
-sum = float(num1) + float(num2)
 
-if num1 | num2 == input(float):
-    print(f"The sum is: {float(sum)}")
+check = '.' in num1 or '.' in num2
+
+if check:
+    result = float(num1) + float(num2)
+    print(f"The Sum is: {float(result)}")
 
 else:
-    print(f"The sum is: {sum}")
+    result = int(num1) + int(num2)
+    print(f"The sum is: {int(result)}")
