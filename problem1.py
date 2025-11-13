@@ -10,4 +10,11 @@
 
 #https://dummyjson.com/users
 
-print("Hi")
+
+print("Please enter the age: ")
+age = input()
+
+import requests
+x = requests.get('https://dummyjson.com/users')
+data = x.json()
+print(data)
