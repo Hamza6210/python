@@ -11,10 +11,22 @@
 #https://dummyjson.com/users
 
 
-print("Please enter the age: ")
-age = input()
-
 import requests
 x = requests.get('https://dummyjson.com/users')
 data = x.json()
-print(data)
+
+age = int(input("Please Enter the Age:"))
+
+for user in data['users']:
+    if user['age'] < age:
+        print(f"Name: {user['firstName']} {user['lastName']}")
+        print(f"Age: {user['age']}")
+        print(f"Email: {user['email']}")
+
+        if user['age'] < 30:
+            print("This user is Young")
+
+        else:
+            print("This user is Middle-aged")
+        
+        print("-" * 30)
