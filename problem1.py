@@ -29,4 +29,7 @@ for user in data['users']:
         else:
             print("This user is Middle-aged")
         
-        print("-" * 30)
+        #print("-" * 30)
+    
+    
+print("No user found!")
