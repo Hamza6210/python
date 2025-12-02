@@ -17,8 +17,14 @@ data = x.json()
 
 age = int(input("Please Enter the Age:"))
 
+user_Found = False
+
 for user in data['users']:
     if user['age'] < age:
+
+        user_Found = True
+        
+        print(" ")
         print(f"Name: {user['firstName']} {user['lastName']}")
         print(f"Age: {user['age']}")
         print(f"Email: {user['email']}")
@@ -29,7 +35,8 @@ for user in data['users']:
         else:
             print("This user is Middle-aged")
         
-        #print("-" * 30)
+        print("-" * 30)
     
     
-print("No user found!")
+if not user_Found:
+    print("No user found who is younger than the entered age!")
