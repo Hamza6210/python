@@ -1,11 +1,16 @@
+# STRINGS AND CONDITIONALS
+
+
 
 # name = input ("Enter your first name: ")
 # print (len(name))
 
+#-----------------------------------------------------------------
 
 # str = "Hi $ My name is $ Hamza and today price in $ is $99.9"
 # print (str.count('$'))
 
+#-----------------------------------------------------------------
 
 # marks = int( input("Please Enter your marks: "))
 
@@ -25,6 +30,7 @@
 #     print("Please enter the valid marks")
 
 
+#-----------------------------------------------------------------
 
 # num = int(input("Enter the number: "))
 
@@ -35,6 +41,9 @@
 
 # else:
 #     print("ODD")
+
+
+#-----------------------------------------------------------------
 
 # a = int(input("Enter first number: "))
 # b = int(input("Enter second number: "))
@@ -54,10 +63,13 @@
 #     print("The largest number is: " , d)
 
 
-x = int(input("Enter the number: "))
+#-----------------------------------------------------------------
 
-if (x % 7 == 0):
-    print("This is multiple of 7")
 
-else:
-    print("Not a multiple")
+# x = int(input("Enter the number: "))
+
+# if (x % 7 == 0):
+#     print("This is multiple of 7")
+
+# else:
+#     print("Not a multiple")
