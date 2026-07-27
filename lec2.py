@@ -73,3 +73,15 @@
 
 # else:
 #     print("Not a multiple")
+
+
+num = int(input("Enter your age: "))
+
+if (num >= 18) :
+    if(num > 85):
+        print("You are overaged")
+    else:
+        print("You are Eligible")
+
+else:
+    print("You are inEligible")
